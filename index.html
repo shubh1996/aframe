@@ -27,8 +27,21 @@
 <body>
     <!-- Content
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
 <a-scene> 
-<a-box depth="2" height="2" width="2" color="red" opacity="0.5"></a-box>
+
+<a-assets>
+<img src="http://blog.topazlabs.com/wp-content/uploads/2013/06/Screen-shot-2013-06-17-at-3.37.16-PM.png" id="myvid">
+</a-assets>
+
+
+<a-box depth="2" height="2" width="2" src="#myvid">
+  <a-animation attribute="rotation" from = "0 0 0" to="180 180 180" repeat="indefinite" dur="10000"></a-animation>
+  <a-animation attribute="scale" from = "1 1 1" to="0.5 0.5 0.5" repeat="indefinite" dur="10000"></a-animation>
+</a-box>
+
+
 <a-sky src = "http://blog.topazlabs.com/wp-content/uploads/2013/06/Screen-shot-2013-06-17-at-3.37.16-PM.png"></a-sky>
 
 
